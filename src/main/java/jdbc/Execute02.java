@@ -34,8 +34,9 @@ public class Execute02 {
         String sql3 = "SELECT * FROM companies WHERE number_of_employees = (SELECT MIN(number_of_employees) FROM companies)";
         ResultSet rs3 = st.executeQuery(sql3);
         while(rs3.next()){
-            System.out.println(rs3.getInt("company_id") + " -- " + rs3.getString("company")
-                                + " -- " + rs3.getInt("number_of_employees"));
+            System.out.println(rs3.getInt("company_id")
+                    + " -- " + rs3.getString("company")
+                    + " -- " + rs3.getInt("number_of_employees"));
 
         }
 
