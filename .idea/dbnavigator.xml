@@ -29,7 +29,10 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="deb6f3ec-bab6-4328-aa1b-075a4818768e">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrenciler where cinsiyet = 'E']]></console>
+      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[select * from ogrenciler
+
+
+delete from ogrenciler where ogrenci_ismi ='Sena Can' or ogrenci_ismi = 'Veli Can']]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

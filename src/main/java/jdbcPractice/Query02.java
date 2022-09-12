@@ -17,6 +17,7 @@ public class Query02 {
         ResultSet data = st.executeQuery("select * from ogrenciler where cinsiyet = 'E'");
 
 
+
     //SORU : Ogrenciler tablosundaki erkek ogrencileri listeleyiniz
         while(data.next()){
             System.out.printf("%-6d %-15.15s %-8s %-8s\n",
